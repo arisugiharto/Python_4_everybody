@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+CREATE TABLE Ages ( 
+  name VARCHAR(128), 
+  age INTEGER
+);
+
+DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES ('Braegan', 14);
+INSERT INTO Ages (name, age) VALUES ('Fatimah', 32);
+INSERT INTO Ages (name, age) VALUES ('Jared', 13);
+INSERT INTO Ages (name, age) VALUES ('Lumi', 14);
+INSERT INTO Ages (name, age) VALUES ('Carlee', 27);
+
+=======
+CREATE TABLE Ages ( 
+  name VARCHAR(128), 
+  age INTEGER
+);
+
+DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES ('Braegan', 14);
+INSERT INTO Ages (name, age) VALUES ('Fatimah', 32);
+INSERT INTO Ages (name, age) VALUES ('Jared', 13);
+INSERT INTO Ages (name, age) VALUES ('Lumi', 14);
+INSERT INTO Ages (name, age) VALUES ('Carlee', 27);
+
+>>>>>>> a3b23b9a0c9e93e0cffe6ee793063319b07d6f24
+SELECT hex(name || age) AS X FROM Ages ORDER BY X;
